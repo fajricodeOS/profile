@@ -1,0 +1,551 @@
+/* ----- GLOBAL CSS STYLING ----- */
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light-webfont.woff') format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* ----- Smooth Scrolling ----- */
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -o-scroll-behavior: smooth;
+}
+/* --x-- Smooth Scrolling --x-- */
+
+body {
+    font-family: Roboto;
+}
+a {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+li {
+    list-style: none;
+}
+input, textarea, button {
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+/* --X-- GLOBAL CSS STYLING --X-- */
+
+/* ----- SCROLL TO TOP ----- */
+#toTop {
+    padding: 15px;
+    background-color: #cd5c20;
+    font-size: 18px;
+    color: white;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    opacity: .75;
+}
+#toTop:hover {
+    background-color: #86340f;
+}
+/* --X-- SCROLL TO TOP --X-- */
+
+/* ----- CONTAINER STYLING ----- */
+.container {
+    padding: 0 40px;
+}
+/* --X-- CONTAINER STYLING --X-- */
+
+/* ----- NAVIGATION ----- */
+
+/* ----- Desktop Navigation ----- */
+nav {
+    background-color: #26262699;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+.nav-list {
+    float: left;
+}
+.nav-list li {
+    margin: 10px;
+    display: inline-block;
+}
+.nav-list a {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #f2f2f2;
+    transition: all 1s ease-in-out;
+}
+.nav-list a:hover {
+    background-color: #1a1a1a;
+    color: #cd5c20;
+    border-radius: 15px;
+}
+/* --x-- Desktop Navigation --x-- */
+
+/* --x-- Mobile Navigation --x-- */
+.nav-mobile {
+    display: none;
+}
+/* --X-- NAVIGATION --X-- */
+
+/* ----- HEADER TITLE ----- */
+header {
+    width: 100%;
+    height: 400px;
+    background: url(./image.jpg);
+    background-size: cover;
+    background-position: center center;
+    float: left;
+    padding-top: 80px;
+    text-align: center;
+    color: #fff;
+}
+header p {
+    padding: 20px;
+    font-size: 25px;
+}
+header a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(205, 92, 32, .5);
+    border-radius: 30px;
+    box-shadow: 0 5px rgba(205, 92, 32, .75);
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+header a:hover {
+    background-color: rgba(205, 92, 32, .25);
+}
+header a:active {
+    top: 5px;
+    box-shadow: none;
+}
+/* --X-- HEADER TITLE --X-- */
+
+/* ----- SECTION TITLE -----*/
+.title {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #26262644;
+    float: left;
+    left: 50%;
+    top: 20px;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+/* --X-- SECTION TITLE --X--*/
+
+/* ----- MAIN CONTENT ----- */
+main {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+#profile, #contact, #skill,
+#experience {
+    box-shadow: 2px 2px 10px #26262644;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow .5s ease-in-out;
+}
+#profile:hover, #contact:hover, #skill:hover,
+#experience:hover, #about:hover {
+    box-shadow: 10px 10px 20px #26262644;
+}
+
+/* ----- Profile ----- */
+.profile-photo {
+    width: 25%;
+    float: left;
+    clear: both;
+}
+.profile-photo img {
+    border-radius: 50%;
+    border: 5px dotted #cd5c20aa;
+    float: left;
+    padding: 10px; 
+    width: 100%;
+}
+.profile-text {
+    width: 75%;
+    font-size: 18px;
+    float: right;
+    padding: 20px;
+}
+.profile-text p {
+    margin: 10px;
+}
+.profile-text a {
+    color: #fff;
+    display: inline-block;
+    padding:  2px 10px;
+    background-color: #cd5c20cc;
+    border-radius: 5px;
+}
+.profile-text address {
+    margin-left: 10px;
+    padding: 10px;
+    border-left: 10px solid #6b2a0ccc;
+    background-color: #6b2a0c44;
+}
+/* --x-- PROFILE --x-- */
+
+/* ----- SKILL ----- */
+.my-skill {
+    display: flex;
+    clear: both;
+    flex-wrap: wrap;
+}
+.my-skill .skill-list {
+    flex: auto;
+    padding: 20px;
+    width: 25%;
+}
+.skill-list .skill-name {
+    font-weight: bold;
+    font-size: 17px;
+}
+.skill-list .progress {
+    background-color: #86340f;
+    text-align: center;
+    color: #fff;
+}
+.progress .progress-bar {
+    padding: 2px;
+    background-color: #cd5c20;
+}
+.progress .html {
+    width: 90%;
+}
+.progress .css {
+    width: 85%;
+}
+.progress .js {
+    width: 50%;
+}
+.progress .office {
+    width: 90%;
+}
+.progress .vector {
+    width: 50%;
+}
+.progress .networking {
+    width: 65%;
+}
+.progress .linux {
+    width: 60%;
+}
+.progress .english {
+    width: 65%;
+}
+/* --x-- SKILL --x-- */
+
+/* ----- EXPERIENCE ----- */
+.my-exp {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.my-exp .exp-list {
+    width: 20%;
+    background-color: #86340f;
+    margin: 20px;
+    flex: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.exp-list .date {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #cd5c20;
+    box-shadow: 0 5px #cd5c2055;
+}
+.exp-list .desc {
+    padding: 15px;
+}
+.exp-list .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom: 2px dotted #fff;
+    padding-bottom: 5px;
+}
+.exp-list .place {
+    font-style: italic;
+    font-size: 14px;
+}
+/* --x-- EXPERIENCE --x-- */
+
+/* ----- CONTACT ----- */
+.contact-media {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+}
+.contact-media a {
+    margin: 10px;
+    flex: auto;
+    width: 22%;
+}
+.contact-media a {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #cd5c20;
+    box-shadow: 0 5px #86340f;
+    border-radius: 30px;
+    color: #fff;
+    transition: box-shadow .5s ease-in-out;
+}
+.contact-media a:hover {
+    box-shadow: 5px 5px #86340f;
+}
+/* --x-- CONTACT --x-- */
+
+/* --X-- MAIN CONTENT --X-- */
+
+/* ----- FOOTER ----- */
+footer {
+	background-color: #262626;
+	clear: both;
+    width: 100%;
+    text-align: center;
+    color: #cd5c20;
+}
+footer img {
+    margin-top: 40px;
+    width: 15%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #cd5c2088;
+}
+footer .tooltip {
+    margin: 20px 0;
+    font-style: oblique;
+    padding: 20px;
+    line-height: 30px;
+    position: relative;
+}
+.tooltip .quote {
+    visibility: hidden;
+    width: 500px;
+    background-color: #86340f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all .2s ease-in-out;
+}
+.tooltip:hover .quote {
+    visibility: visible;
+    cursor: pointer;
+}
+.tooltip:hover .quote:hover {
+    background-color: #86340fcc;
+}
+footer .advise {
+    font-size: 13px;
+    text-align: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: #fffd;
+}
+/* --X-- FOOTER --X-- */
+
+/* 
+ * MEDIA QUERY BEGIN HERE
+ */
+
+/* ----- MEDIA QUERY 1024 PX ----- */
+@media screen and (max-width: 1024px) {
+
+    /* ----- MAIN CONTENT ----- */
+
+    /* ----- Profile ----- */
+    .profile-photo {
+        width: 35%;
+    }
+    .profile-photo img {
+        margin-bottom: 10px;
+    }
+    .profile-text {
+        text-align: left;
+        width: 65%;
+        margin-top: 10px;
+    }
+    /* --x-- Profile --x-- */
+        
+    /* ----- Skill ----- */
+    .my-skill {
+        flex-wrap: wrap;
+    }
+    .my-skill .skill-list {
+        width: 50%;
+    }
+    /* --x-- Skill --x-- */
+
+    /* ----- Experience ----- */
+    .my-exp .exp-list {
+        width: 40%;
+    }
+    /* --x-- Experience --x-- */
+
+    /* ----- Contact ----- */
+    .contact-media a {
+        width: 45%;
+    }
+    /* --x-- Contact --x-- */
+
+    /* --X-- MAIN CONTENT --X-- */
+}
+/* --X-- MEDIA QUERY 1024 PX --X-- */
+
+/* ----- MEDIA QUERY 768 PX ----- */
+@media screen and (max-width: 768px) {
+    /* ----- NAVIGATION ----- */
+    nav {
+        overflow: hidden;
+        position: relative;
+        background-color: #262626;
+        height: 56px;
+    }
+    .nav-list {
+        float: unset;
+        margin-bottom: 20px;
+    }
+    .nav-list li, .nav-list a {
+        display: block;
+    }
+    .nav-list a {
+        padding: 10px 15px;
+        color: #cd5c20;
+    }
+    .nav-list a:hover {
+        padding-left: 40px;
+    }
+    .nav-mobile {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        color: #cd5c20;
+        font-size: 18px;
+    }
+    .nav-logo {
+        float: left;
+        flex: auto;
+    }
+    .nav-logo a {
+        color: inherit;
+    }
+    .burger-btn {
+        float: right;
+        cursor: pointer;
+        border: 1px solid #cd5c20;
+        padding: 5px 7px;
+        border-radius: 3px;
+        outline: none;
+        background: none;
+        color: inherit;
+    }
+    .burger-btn:active {
+        background-color: #cd5c2022;
+    }
+    .nav-list a {
+        padding: 10px;
+        width: 100%;
+    }
+    /* --X-- NAVIGATION --X-- */
+
+    /* ----- MAIN CONTENT ----- */
+
+    /* ----- Profile ----- */
+    #profile {
+        text-align: center;
+    }
+    .profile-photo {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .profile-photo img {
+        float: unset;
+        width: 50%;
+    }
+    .profile-text {
+        width: 100%;
+        text-align: inherit;
+    }
+    /* --x-- Profile --x-- */
+    
+    /* ----- Contact ----- */
+    .contact-media {
+        text-align: center;
+    }
+    /* --x-- Contact --x-- */
+
+    /* --X-- MAIN CONTENT --X-- */
+
+    /* ----- FOOTER ----- */
+    footer img {
+        width: 20%;
+    }
+    .tooltip .quote {
+        width: 300px
+    }
+    /* --X-- FOOTER --X-- */
+
+}
+/* --X-- MEDIA QUERY 768 PX --X-- */
+
+/* ----- MEDIA QUERY 520 PX ----- */
+@media screen and (max-width: 520px) {
+    .container {
+        padding: 0;
+    }
+    nav {
+        padding: 0 20px;
+    }
+    #profile, #contact, #skill,
+    #experience {
+        box-shadow: none;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .my-exp .exp-list {
+        width: 100%;
+    }
+    .my-skill .skill-list {
+        width: 100%;
+        padding: 10px;
+    }
+    .contact-media a {
+        width: 100%;
+    }
+    footer img {
+        width: 35%;
+    }
+}
+/* --X-- MEDIA QUERY 520 PX --X-- */

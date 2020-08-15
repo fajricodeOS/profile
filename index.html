@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="fontawesome.all.min.js"></script>
+</head>
+<body>
+    <nav id="navigation">
+        <div class="container">
+            <!-- MOBILE NAVIGATION -->
+            <div class="nav-mobile">
+                <div class="nav-logo">
+                    <a href="#">My Profile</a>
+                </div>
+                <div class="burger-btn" onclick="mobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <!-- MOBILE NAVIGATION -->
+
+            <!-- DESKTOP NAVIGATION -->
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#profile"><i class="fa fa-user-circle"></i> Profile</a></li>
+                    <li><a href="#skill"><i class="fa fa-trophy"></i> Skill</a></li>
+                    <li><a href="#experience"><i class="fa fa-cogs"></i> Experience</a></li>
+                    <li><a href="#contact"><i class="fa fa-paper-plane"></i> Contact</a></li>
+                </ul>
+            </div>
+            <!--x DESKTOP NAVIGATION x-->
+        </div>
+    </nav>
+
+    <header>
+        <div id="container">
+            <p>Welcome to my profile page</p>
+            <a href="#profile">View my Profile&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="profile">
+                <div class="title">
+                    <span><i class="fa fa-user-circle"></i>&nbsp;&nbsp;Profile</span>
+                </div>
+                <div class="profile-photo">
+                    <img src="./profile.jpeg" alt="">
+                </div>
+                <div class="profile-text">
+                    <p>Hy, Everybody!</p>
+                    <p>You're gonna see my short profile.</p>
+                    <p>I'm Muhammad Fajri, called me Fajri.</p>
+                    <p>I'm an <em>informatics enginneering</em> student at one of South Sulawesi high school education.</p>
+                    <p>Wanna know me further, contact me at <a href="#contact">Here <i class="fa fa-caret-right"></i></a>.</p>
+                    <Address>South Sulawesi - Indonesia</Address>
+                </div>
+            </section>
+            <section id="skill">
+                <div class="title">
+                    <span><i class="fa fa-trophy"></i>&nbsp;&nbsp;Skill</span>
+                </div>
+                <div class="my-skill">
+                    <div class="skill-list">
+                        <p class="skill-name">HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar html">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <p class="skill-name">CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar css">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <p class="skill-name">JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-bar js">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <p class="skill-name">Ms. Office/WPS Office</p>
+                        <div class="progress">
+                            <div class="progress-bar office">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <p class="skill-name">CorelDRAW/Inkscape</p>
+                        <div class="progress">
+                            <div class="progress-bar vector">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <p class="skill-name">Networking</p>
+                        <div class="progress">
+                            <div class="progress-bar networking">65%</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <p class="skill-name">Linux</p>
+                        <div class="progress">
+                            <div class="progress-bar linux">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <p class="skill-name">English</p>
+                        <div class="progress">
+                            <div class="progress-bar english">65%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <div class="title">
+                    <span><i class="fa fa-cogs"></i>&nbsp;&nbsp;Experience</span>
+                </div>
+                <div class="my-exp">
+                    <div class="exp-list">
+                        <div class="date">
+                            <p>Sep 2017 - Oct 2019</p>
+                        </div>
+                        <div class="desc">
+                            <p class="name">Dapodik Operator</p>
+                            <p class="place">SMP PGRI 5 Maros</p>
+                        </div>
+                    </div>
+                    <div class="exp-list">
+                        <div class="date">
+                            <p>1 - 31 Jul 2019</p>
+                        </div>
+                        <div class="desc">
+                            <p class="name">Junior Network Administrator</p>
+                            <p class="place">Ministry of Communication and Information of Indonesia in collaboration with PNUP</p>
+                        </div>
+                    </div>
+                    <div class="exp-list">
+                        <div class="date">
+                            <p>Jan - Apr 2016</p>
+                        </div>
+                        <div class="desc">
+                            <p class="name">Internship</p>
+                            <p class="place">Communication and Information Office of Maros Regency</p>
+                        </div>
+                    </div>
+                    <div class="exp-list">
+                        <div class="date">
+                            <p>26 - 29 Nov 2014</p>
+                        </div>
+                        <div class="desc">
+                            <p class="name">IT Workshop</p>
+                            <p class="place">Indonesian Backtrack Team Subregional Maros</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="title">
+                    <span><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Contact Me</span>
+                </div>
+                <div class="contact-media">
+                    <a href="https://www.instagram.com/mhd_fajri15/"><span><i class="fab fa-instagram"></i>&nbsp;&nbsp;@mhd_fajri15</span></a>
+                    <a href="https://web.facebook.com/fajri.codeOS/"><span><i class="fab fa-facebook"></i>&nbsp;&nbsp;Muhammad Fajri</span></a>
+                    <a href="https://github.com/fajricodeOS"><span><i class="fab fa-github"></i>&nbsp;&nbsp;fajricodeOS</span></a>
+                    <a href="https://www.linkedin.com/in/fajricodeos/"><span><i class="fab fa-linkedin"></i>&nbsp;&nbsp;FajriCodeOS</span></a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <img src="./profile.jpeg" />
+        <div class="tooltip">
+            "Keep trying because there is no anybody knows who you are today is you are another in tomorrow day." <br/> -- Muhammad Fajri --
+            <p class="quote">"Teruslah berusaha karena tidak ada yang tahu dirimu hari ini adalah dirimu yang lain di hari esok."</p>
+        </div>
+        <div class="advise">
+            <p>That was my very simple creation. If there is an advisable word, throw to me through one of my contacts above.</p>
+        </div>
+        
+        <!-- GO TO TOP BUTTON -->
+        <div id="toTop" onclick="gotoTop()">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
